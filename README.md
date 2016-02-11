@@ -1,7 +1,7 @@
 # hadoop-spatial-framework-docker
 Quickly build arbitrary size Hadoop cluster based on Docker includes tools for analysis spatial data.
 ------
-Core of this project is based on [krejcmat/hadoop-docker](https://github.com/krejcmat/hadoop-spatial-framework-docker/blob/master/README.md) images. Please check details on mentioned site. Dockerfile sources of this project extends Hadoop docker ([krejcmat/hadoop-docker](https://github.com/krejcmat/hadoop-spatial-framework-docker/blob/master/README.md)) images by layers with: Hive, [geometry-api-java](https://github.com/Esri/geometry-api-java), [spatial-framework-for-hadoop](https://github.com/Esri/spatial-framework-for-hadoop) and [Hive-JSON-Serde](https://github.com/Esri/spatial-framework-for-hadoop/wiki/Hive-JSON-SerDe). The Spatial Framework for Hadoop allows developers and data scientists to use the Hadoop data processing system for spatial data analysis.
+Core of this project is based on [krejcmat/hadoop-docker](https://github.com/krejcmat/hadoop-docker/blob/master/README.md) images. Please check details on mentioned site. Dockerfile sources of this project extends Hadoop docker ([krejcmat/hadoop-docker](https://github.com/krejcmat/hadoop-spatial-framework-docker/blob/master/README.md)) images by layers with: Hive, [geometry-api-java](https://github.com/Esri/geometry-api-java), [spatial-framework-for-hadoop](https://github.com/Esri/spatial-framework-for-hadoop) and [Hive-JSON-Serde](https://github.com/Esri/spatial-framework-for-hadoop/wiki/Hive-JSON-SerDe). The Spatial Framework for Hadoop allows developers and data scientists to use the Hadoop data processing system for spatial data analysis.
 
 ######Version of products
 | system          | version    | 
