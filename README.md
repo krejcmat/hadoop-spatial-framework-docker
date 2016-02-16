@@ -1,7 +1,7 @@
 # hadoop-spatial-framework-docker
 Quickly build arbitrary size Hadoop cluster based on Docker includes tools for analysis spatial data.
 ------
-Core of this project is based on [krejcmat/hadoop-docker](https://github.com/krejcmat/hadoop-spatial-framework-docker/blob/master/README.md) images. Please check details on mentioned site. Dockerfile sources of this project extends Hadoop docker ([krejcmat/hadoop-docker](https://github.com/krejcmat/hadoop-spatial-framework-docker/blob/master/README.md)) images by layers with: Hive, [geometry-api-java](https://github.com/Esri/geometry-api-java), [spatial-framework-for-hadoop](https://github.com/Esri/spatial-framework-for-hadoop) and [Hive-JSON-Serde](https://github.com/Esri/spatial-framework-for-hadoop/wiki/Hive-JSON-SerDe). The Spatial Framework for Hadoop allows developers and data scientists to use the Hadoop data processing system for spatial data analysis.
+Core of this project is based on [krejcmat/hadoop-docker](https://github.com/krejcmat/hadoop-docker/blob/master/README.md) images. Please check details on mentioned site. Dockerfile sources of this project extends Hadoop docker ([krejcmat/hadoop-docker](https://github.com/krejcmat/hadoop-spatial-framework-docker/blob/master/README.md)) images by layers with: Hive, [geometry-api-java](https://github.com/Esri/geometry-api-java), [spatial-framework-for-hadoop](https://github.com/Esri/spatial-framework-for-hadoop) and [Hive-JSON-Serde](https://github.com/Esri/spatial-framework-for-hadoop/wiki/Hive-JSON-SerDe). The Spatial Framework for Hadoop allows developers and data scientists to use the Hadoop data processing system for spatial data analysis.
 
 ######Version of products
 | system          | version    | 
@@ -98,7 +98,7 @@ For starting Hadoop cluster see documentation of [krejcmat/hadoop-docker](https:
 
 If Hadoop is runnig go to next step.
 
-####4] Start Hive
+####4] Start Hive console
 ```
 $ hive
 ```
@@ -158,7 +158,6 @@ ORDER BY cnt desc;
 
 [how-to-load-spatial-data-using-the-hadoop-gis-framework](http://stackoverflow.com/questions/27147274/how-to-load-spatial-data-using-the-hadoop-gis-framework)
 
-
 [Geospatial Data Analysis in Hadoop!!!!!!!!!!!!!!!!!!!IMPORT DATA](https://community.hortonworks.com/articles/5129/geospatial-data-analysis-in-hadoop.html)
 
 [Hive cofiguration](https://cwiki.apache.org/confluence/display/Hive/AdminManual+Configuration)
@@ -169,4 +168,14 @@ ORDER BY cnt desc;
 
 [Hadoop Toolbox: When to Use What](http://www.smartdatacollective.com/mtariq/120791/hadoop-toolbox-when-use-what)
 
+#######Configure hive metastore
+http://www.cloudera.com/documentation/archive/cdh/4-x/4-2-0/CDH4-Installation-Guide/cdh4ig_topic_18_4.html
+
+#######Configure metastore - MySQL
+#conenct to mysql 
+mysql -u root -p
+
+#check host
+SHOW VARIABLES WHERE Variable_name = 'hostname'
+#check port SHOW VARIABLES WHERE Variable_name = 'port'
 

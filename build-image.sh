@@ -39,9 +39,11 @@ then
 	docker_rmi hadoop-spatial-framework-master
 	docker_rmi hadoop-spatial-framework-slave
 	docker_rmi hadoop-spatial-framework-base
+	#docker_rmi hadoop-spatial-framework-metastore
 	docker_build hadoop-spatial-framework-base
 	docker_build hadoop-spatial-framework-master
 	docker_build hadoop-spatial-framework-slave
+	#docker_build hadoop-spatial-framework-metastore
 elif [ $image == "hadoop-spatial-framework-master" ]
 then
 	docker_rmi hadoop-spatial-framework-master
@@ -50,6 +52,10 @@ elif [ $image == "hadoop-spatial-framework-slave" ]
 then
 	docker_rmi hadoop-spatial-framework-slave
 	docker_build hadoop-spatial-framework-slave
+#elif [ $image == "hadoop-spatial-framework-metastore" ]
+#then
+#	docker_rmi hadoop-spatial-framework-metastore
+#	docker_build hadoop-spatial-framework-metastore
 else
 	echo "The image name is wrong!"
 fi
